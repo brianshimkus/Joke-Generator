@@ -6,7 +6,7 @@ export default function useRandomJoke(firstName, lastName) {
 	useEffect(() => {
 		const fetchJoke = async () =>
 			await fetch(
-				`http://api.icndb.com/jokes/random?firstName=${firstName}&lastName=${lastName}`
+				`//api.icndb.com/jokes/random?firstName=${firstName}&lastName=${lastName}`
 			)
 				.then((res) => res.json())
 				.then((data) => {
